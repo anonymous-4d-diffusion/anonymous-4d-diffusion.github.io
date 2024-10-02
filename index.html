@@ -58,7 +58,7 @@
 
     <div class="container center">
       <p>
-        Below we show zero-shot 4DiM samples on pose-conditional 8-frame video to 8-frame video translation. Here, we focus on <i>camera stabilization</i>, i.e., given a video with a moving camera, 4DiM generates a video with dynamics but sets the camera at a fixed position.
+        Below we show zero-shot 4DiM samples on pose-conditional 8-frame video to 8-frame video translation. Here, we focus on <u>camera stabilization</u>, i.e., given a video with a moving camera, 4DiM generates a video with dynamics but sets the camera at a fixed position.
       </p>
     </div>
 
@@ -138,7 +138,7 @@
 
     <div class="container center">
       <p>
-        Here, we focus on <i>novel trajectory generation</i>, i.e., given a video with a moving camera, 4DiM re-generates a video with the camera moving along the newly desired trajectory.
+        Here, we focus on <u>novel trajectory generation</u>, i.e., given a video with a moving camera, 4DiM re-generates a video with the camera moving along the newly desired trajectory.
       </p>
     </div>
 
@@ -241,7 +241,7 @@
 
     <div class="container center">
       <p>
-        Below we show 4DiM samples on <i>video interpolation</i>, i.e., given the first and the last frame, 4DiM generates a video in between them. There is no camera pose input.
+        Below we show 4DiM samples on <u>video interpolation</u>, i.e., given the first and the last frame, 4DiM generates a video in between them. There is no camera pose input.
       </p>
     </div>
 
@@ -324,7 +324,7 @@
 
     <div class="container center">
       <p>
-        Below we show 4DiM samples on <i>video extrapolation</i>, i.e., given the first two frames, 4DiM generates the rest of the video. There is no camera pose input.
+        Below we show 4DiM samples on <u>video extrapolation</u>, i.e., given the first two frames, 4DiM generates the rest of the video. There is no camera pose input.
       </p>
     </div>
 
@@ -576,7 +576,7 @@
 
     <div class="container center">
       <p>
-        Below we show zero-shot 4DiM samples on arbitrary images gathered from the internet:
+        Below we show zero-shot 4DiM samples on <u>arbitrary images</u> gathered from the internet:
       </p>
     </div>
 
@@ -667,7 +667,7 @@
 
     <div class="container center">
       <p>
-        Below we show 4DiM samples on the more challenging case of 360° camera rotation:
+        Below we show 4DiM samples on the more challenging case of <u>360° camera rotation</u>:
       </p>
     </div>
 
@@ -749,7 +749,7 @@
     <br>
 
     <div class="container center">
-      <p>4D from a single image is also possible but is the most challenging case we consider. Here we show some driving examples getting increasingly further away from the input image in space and time:</p>
+      <p>Generating <u>4D from a single image</u> is extremely challenging. Here we show a driving scene where we advance in both space and time from a single starting image:</p>
       <br>
       <!-- <div class="input-output">
         <video autoplay muted loop>
@@ -765,10 +765,15 @@
         <img src="./new_samples/sv/sample2_pose.gif" alt="" />
         <img src="./new_samples/sv/sample2.gif" alt="" />
       </div>
+      <div class="image-captions caption">
+        <div>Input</div>
+        <div>Trajectory</div>
+        <div>Output</div>
+      </div>
       <br />
-      <!-- <br />
-      <p>One interesting finding is that deep processing of the full camera trajectory is important to achieve the best results. Here we show 4D generation from a single image where the cameras begin with a 180&deg; rotation. 4DiM creates the shape of the street based on the full camera trajectory. This is similar to how for indoor scenes 4DiM creates empty space rather than walls where the camera should be located.</p>
-      <br> -->
+      <br />
+      <p>We show another example of <u>long trajectory generation</u>. Interestingly we find that the trajectory influences the scene content (curved road).</p>
+      <br>
       <div class="input-output-target">
         <video autoplay muted loop>
           <source src="./new_samples/sv/sample1_in.mp4" type="video/mp4" />
@@ -797,7 +802,7 @@
 
     <div class="container center">
       <p>
-        4DiM can create 360° panoramas without the exposure artifacts found in traditional stitching methods. Here we show a comparison of 4DiM v.s. homography with gamma adjustment, given six input images:
+        4DiM can <u>stitch 360° panoramas</u> without the exposure artifacts found in traditional stitching methods. Here we show a comparison of 4DiM v.s. homography with gamma adjustment, given six input images:
       </p>
       <br>
       <div class="input-output-target">      
@@ -817,7 +822,7 @@
     <br>
 
     <div class="container center">
-      <p>One particular application of video-to-video translation is to re-angle cameras. Here we simultaneously generate increasingly larger angle changes to a side-view camera to make it look to the front.
+      <p>One particular application of video-to-video translation is to <u>adjust camera orientations</u>. Here we simultaneously generate increasingly larger angle changes to a side-view camera to make it look to the front.
       </p>
       <br>
       <div class="input-output-target">
