@@ -805,7 +805,7 @@
         4DiM can <u>stitch 360° panoramas</u> without the exposure artifacts found in traditional stitching methods. Here we show a comparison of 4DiM v.s. homography with gamma adjustment, given six input images:
       </p>
       <br>
-      <div class="input-output-target">      
+      <div class="input-output-target">
         <img src="./new_samples/pano/cond.gif" alt="" />
         <!-- <span class="arrow">⟶</span> -->
         <img src="./new_samples/pano/hyp.gif" alt="" />
@@ -834,6 +834,253 @@
         <div>Input</div>
         <div>Output</div>
         <div>Homography warped input</div>
+      </div>
+      <br>
+      <br>
+      <!-- <span class="caption">
+      Left: input video. Middle: 4DiM output. Right: homography-warped input video.
+      </span> -->
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div class="section-header center" id="rebuttal">
+      <h2>
+        ICLR 2025 Rebuttal
+      </h2>
+    </div>
+
+    <br>
+
+    <div class="container center">
+      <p>
+        <b>Reviewer 3Lp3 (W1)</b>: we include 512x512 samples from a single latent diffusion model otherwise following the 4DiM architecture on the single image to 3D task. Our data, architecture, and sampling contributions are all readily applicable to latent diffusion models which can more easily achieve higher resolutions.
+      </p>
+    </div>
+    <br>
+    <div class="center">
+      <div class="carousel">
+        <span class="carousel-arrow left" onclick="moveCarousel(this.parentNode, -1)">&#9001;</span>
+        <!-- <div class="container">
+          <span class="active" onclick="changeCarouselGroup(this, 'fwd')">wind forward</span>
+          <span>&#x2022;</span>
+          <span onclick="changeCarouselGroup(this, 'bwd')">wind backward</span>
+          <span>&#x2022;</span>
+        </div> -->
+        <div class="carousel-elements" onscroll="scrollCarousel(this);">
+          <div class="carousel-element">
+            <div class="input-output hr">
+              <img src="./rebuttal_samples/ldm/input_1.gif" alt="" />
+              <span class="arrow">⟶</span>
+              <img src="./rebuttal_samples/ldm/output_1.gif " alt="" />
+            </div>
+          </div>
+          <div class="carousel-element">
+            <div class="input-output hr">
+              <img src="./rebuttal_samples/ldm/input_2.gif" alt="" />
+              <span class="arrow">⟶</span>
+              <img src="./rebuttal_samples/ldm/output_2.gif " alt="" />
+            </div>
+          </div>
+          <div class="carousel-element">
+            <div class="input-output hr">
+              <img src="./rebuttal_samples/ldm/input_3.gif" alt="" />
+              <span class="arrow">⟶</span>
+              <img src="./rebuttal_samples/ldm/output_3.gif " alt="" />
+            </div>
+          </div>
+          <div class="carousel-element">
+            <div class="input-output hr">
+              <img src="./rebuttal_samples/ldm/input_4.gif" alt="" />
+              <span class="arrow">⟶</span>
+              <img src="./rebuttal_samples/ldm/output_4.gif " alt="" />
+            </div>
+          </div>
+          <div class="carousel-element">
+            <div class="input-output hr">
+              <img src="./rebuttal_samples/ldm/input_5.gif" alt="" />
+              <span class="arrow">⟶</span>
+              <img src="./rebuttal_samples/ldm/output_5.gif " alt="" />
+            </div>
+          </div>
+          <div class="carousel-element">
+            <div class="input-output hr">
+              <img src="./rebuttal_samples/ldm/input_6.gif" alt="" />
+              <span class="arrow">⟶</span>
+              <img src="./rebuttal_samples/ldm/output_6.gif " alt="" />
+            </div>
+          </div>
+          <div class="carousel-element">
+            <div class="input-output hr">
+              <img src="./rebuttal_samples/ldm/input_7.gif" alt="" />
+              <span class="arrow">⟶</span>
+              <img src="./rebuttal_samples/ldm/output_7.gif " alt="" />
+            </div>
+          </div>
+          <div class="carousel-element">
+            <div class="input-output hr">
+              <img src="./rebuttal_samples/ldm/input_8.gif" alt="" />
+              <span class="arrow">⟶</span>
+              <img src="./rebuttal_samples/ldm/output_8.gif " alt="" />
+            </div>
+          </div>
+        </div>
+        <span class="carousel-arrow right" onclick="moveCarousel(this.parentNode, 1)">&#9002;</span>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="container center">
+      <p>
+        <b>Reviewer m6rk (W1), Reviewer SN35 (W4)</b>: we include some side-by-side comparisons of 4DiM v.s. 4DiM trained without large-scale unposed video on LLFF. It becomes especially clear in more out-of-distribution settings that, without access to large-scale data of the real world, models have significantly poorer understanding of geometry and scene structure in the wild.
+      </p>
+      <br>
+      <div class="image-captions caption">
+        <div>Input</div>
+        <div>4DiM (no video)</div>
+        <div>4DiM</div>
+      </div>
+      <div class="input-output-target">
+        <img src="./rebuttal_samples/novid/input_1.gif" alt="">
+        <img src="./rebuttal_samples/novid/output_1.gif" alt="" />
+        <img src="./rebuttal_samples/novid/4dim_1.gif" alt="" />
+      </div>
+      <div class="input-output-target">
+        <img src="./rebuttal_samples/novid/input_2.gif" alt="">
+        <img src="./rebuttal_samples/novid/output_2.gif" alt="" />
+        <img src="./rebuttal_samples/novid/4dim_3.gif" alt="" />
+      </div>
+      <div class="input-output-target">
+        <img src="./rebuttal_samples/novid/input_3.gif" alt="">
+        <img src="./rebuttal_samples/novid/output_3.gif" alt="" />
+        <img src="./rebuttal_samples/novid/4dim_2.gif" alt="" />
+      </div>
+      <div class="input-output-target">
+        <img src="./rebuttal_samples/novid/input_4.gif" alt="">
+        <img src="./rebuttal_samples/novid/output_4.gif" alt="" />
+        <img src="./rebuttal_samples/novid/4dim_4.gif" alt="" />
+      </div>
+      <br>
+      <br>
+      <!-- <span class="caption">
+      Left: input video. Middle: 4DiM output. Right: homography-warped input video.
+      </span> -->
+    </div>
+
+    <br />
+    <br />
+
+    <div class="container center">
+      <p>
+        <b>Reviewer SN35 (W3)</b>: we include some side-by-side comparisons of 4DiM v.s. various video interpolation methods from prior work on the Davis dataset, including FILM and RIFE (non-generative baselines) as well as LDMVFI, diffusion model trained specifically for this task. Unsurprisingly, non-generative baselines are not well-suited for large motion, but even specialized generative models may not perform well in this setting.
+      </p>
+      <br>
+    </div>
+    <div class="center">
+      <div class="image-captions caption interp-comparisons">
+        <div>FILM</div>
+        <div>RIFE</div>
+        <div>LDMVFI</div>
+        <div>4DiM</div>
+      </div>
+      <div class="input-output-target">
+        <img src="./rebuttal_samples/interp/film_1.gif" alt="">
+        <img src="./rebuttal_samples/interp/rife_1.gif" alt="" />
+        <img src="./rebuttal_samples/interp/ldmvfi_1.gif" alt="" />
+        <img src="./rebuttal_samples/interp/4dim_1.gif" alt="" />
+      </div>
+      <div class="input-output-target">
+        <img src="./rebuttal_samples/interp/film_2.gif" alt="">
+        <img src="./rebuttal_samples/interp/rife_2.gif" alt="" />
+        <img src="./rebuttal_samples/interp/ldmvfi_2.gif" alt="" />
+        <img src="./rebuttal_samples/interp/4dim_2.gif" alt="" />
+      </div>
+      <div class="input-output-target">
+        <img src="./rebuttal_samples/interp/film_6.gif" alt="">
+        <img src="./rebuttal_samples/interp/rife_6.gif" alt="" />
+        <img src="./rebuttal_samples/interp/ldmvfi_6.gif" alt="" />
+        <img src="./rebuttal_samples/interp/4dim_6.gif" alt="" />
+      </div>
+      <div class="input-output-target">
+        <img src="./rebuttal_samples/interp/film_3.gif" alt="">
+        <img src="./rebuttal_samples/interp/rife_3.gif" alt="" />
+        <img src="./rebuttal_samples/interp/ldmvfi_3.gif" alt="" />
+        <img src="./rebuttal_samples/interp/4dim_3.gif" alt="" />
+      </div>
+      <div class="input-output-target">
+        <img src="./rebuttal_samples/interp/film_4.gif" alt="">
+        <img src="./rebuttal_samples/interp/rife_4.gif" alt="" />
+        <img src="./rebuttal_samples/interp/ldmvfi_4.gif" alt="" />
+        <img src="./rebuttal_samples/interp/4dim_4.gif" alt="" />
+      </div>
+      <div class="input-output-target">
+        <img src="./rebuttal_samples/interp/film_5.gif" alt="">
+        <img src="./rebuttal_samples/interp/rife_5.gif" alt="" />
+        <img src="./rebuttal_samples/interp/ldmvfi_5.gif" alt="" />
+        <img src="./rebuttal_samples/interp/4dim_5.gif" alt="" />
+      </div>
+      <div class="input-output-target">
+        <img src="./rebuttal_samples/interp/film_11.gif" alt="">
+        <img src="./rebuttal_samples/interp/rife_11.gif" alt="" />
+        <img src="./rebuttal_samples/interp/ldmvfi_11.gif" alt="" />
+        <img src="./rebuttal_samples/interp/4dim_11.gif" alt="" />
+      </div>
+      <div class="input-output-target">
+        <img src="./rebuttal_samples/interp/film_6.gif" alt="">
+        <img src="./rebuttal_samples/interp/rife_6.gif" alt="" />
+        <img src="./rebuttal_samples/interp/ldmvfi_6.gif" alt="" />
+        <img src="./rebuttal_samples/interp/4dim_6.gif" alt="" />
+      </div>
+      <div class="input-output-target">
+        <img src="./rebuttal_samples/interp/film_8.gif" alt="">
+        <img src="./rebuttal_samples/interp/rife_8.gif" alt="" />
+        <img src="./rebuttal_samples/interp/ldmvfi_8.gif" alt="" />
+        <img src="./rebuttal_samples/interp/4dim_8.gif" alt="" />
+      </div>
+      <br>
+      <br>
+      <!-- <span class="caption">
+      Left: input video. Middle: 4DiM output. Right: homography-warped input video.
+      </span> -->
+    </div>
+
+    <br />
+    <br />
+
+    <div class="container center">
+      <p>
+        <b>Reviewer SN35 (W3)</b>: we include a side-by-side comparison of 4DiM v.s. MVDiffusion on panorama generation from a single image, <i>without</i> text conditioning. Existing prior work is not well-suited for 360° generation from one image without the additional use of text conditioning.
+      </p>
+      <br>
+      <div class="image-captions caption">
+        <div>Input</div>
+        <div>MVDiffusion</div>
+        <div>4DiM</div>
+      </div>
+      <div class="input-output-target">
+        <img src="./rebuttal_samples/mvd/input_fern.png" alt="">
+        <img src="./rebuttal_samples/mvd/mvd_fern.gif" alt="" />
+        <img src="./rebuttal_samples/mvd/ours_fern.gif" alt="" />
+      </div>
+      <div class="input-output-target">
+        <img src="./rebuttal_samples/mvd/input_slide.png" alt="">
+        <img src="./rebuttal_samples/mvd/mvd_slide.gif" alt="" />
+        <img src="./rebuttal_samples/mvd/ours_slide.gif" alt="" />
+      </div>
+      <div class="input-output-target">
+        <img src="./rebuttal_samples/mvd/input_den.png" alt="">
+        <img src="./rebuttal_samples/mvd/mvd_den.gif" alt="" />
+        <img src="./rebuttal_samples/mvd/ours_den.gif" alt="" />
+      </div>
+      <div class="input-output-target">
+        <img src="./rebuttal_samples/mvd/input_table.png" alt="">
+        <img src="./rebuttal_samples/mvd/mvd_table.gif" alt="" />
+        <img src="./rebuttal_samples/mvd/ours_table.gif" alt="" />
       </div>
       <br>
       <br>

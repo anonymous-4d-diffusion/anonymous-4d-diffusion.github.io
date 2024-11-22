@@ -155,12 +155,24 @@ a {
   width: 33%;
 }
 
+.interp-comparisons {
+  justify-content: center;
+}
+.image-captions.interp-comparisons > div {
+  width: 256px !important;
+}
+
 img, video {
   border: 1px solid #bbb;
   border-radius: 6px;
   overflow: hidden;
 }
 
+.hr video,.hr img {
+  /* Do not show videos above their natural resolution */
+  max-width: 512px !important;
+  width: 512px;
+}
 .input-output video,.input-output img {
   /* Do not show videos above their natural resolution */
   max-width: 256px;
